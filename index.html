@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mikihisa Ishino | Portfolio</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              500: '#6366f1',
+              600: '#4f46e5',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen font-sans selection:bg-indigo-500 selection:text-white">
+
+  <!-- Background Glow Effect -->
+  <div class="fixed inset-0 pointer-events-none -z-10 overflow-hidden">
+    <div class="absolute -top-40 -left-40 w-96 h-96 bg-indigo-500/20 rounded-full blur-3xl"></div>
+    <div class="absolute top-1/2 -right-40 w-96 h-96 bg-purple-500/15 rounded-full blur-3xl"></div>
+  </div>
+
+  <div class="max-w-4xl mx-auto px-6 py-16 space-y-20">
+
+    <!-- Hero Section -->
+    <header class="space-y-6">
+      <div class="inline-flex items-center gap-2 px-3 py-1 text-xs font-medium bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 rounded-full">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        AI & Physical AI Engineering
+      </div>
+      <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight">
+        Ishino Mikihisa
+      </h1>
+      <p class="text-lg text-slate-400 max-w-2xl leading-relaxed">
+        深層学習・LLMアプリケーション設計から、ロボティクス等の実世界AI（Physical AI）の領域を探求しています。実用的なデータ活用と自律知能システムの社会実装に関心を持っています。
+      </p>
+
+      <div class="flex flex-wrap items-center gap-4 pt-2">
+        <!-- ご自身のGitHubアカウントURLに変更してください -->
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-slate-700 rounded-lg text-sm font-medium transition duration-200">
+          <i data-lucide="github" class="w-4 h-4"></i> GitHub
+        </a>
+      </div>
+    </header>
+
+    <!-- Skills Section -->
+    <section class="space-y-6">
+      <h2 class="text-2xl font-bold tracking-tight border-b border-slate-800 pb-3 flex items-center gap-2">
+        <i data-lucide="cpu" class="w-6 h-6 text-indigo-400"></i> Tech Stack & Skills
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        
+        <!-- Machine Learning & Deep Learning -->
+        <div class="p-5 bg-slate-900/60 border border-slate-800/80 rounded-xl space-y-3">
+          <div class="font-semibold text-slate-200 flex items-center gap-2">
+            <i data-lucide="brain-circuit" class="w-4 h-4 text-indigo-400"></i> AI & Machine Learning
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 text-xs bg-slate-800 text-slate-300 rounded-md">PyTorch</span>
+            <span class="px-2.5 py-1 text-xs bg-slate-800 text-slate-300 rounded-md">Deep Learning</span>
+            <span class="px-2.5 py-1 text-xs bg-slate-800 text-slate-300 rounded-md">Generative Models</span>
+            <span class="px-2.5 py-1 text-xs bg-slate-800 text-slate-300 rounded-md">Weights & Biases (MLOps)</span>
+          </div>
+        </div>
+
+        <!-- LLM & Applications -->
+        <div class="p-5 bg-slate-900/60 border border-slate-800/80 rounded-xl space-y-3">
+          <div class="font-semibold text-slate-200 flex items-center gap-2">
+            <i data-lucide="bot" class="w-4 h-4 text-indigo-400"></i> LLM & Systems
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 text-xs bg-slate-800 text-slate-300 rounded-md">LangGraph</span>
+            <span class="px-2.5 py-1 text-xs bg-slate-800 text-slate-300 rounded-md">Multi-Actor Systems</span>
+            <span class="px-2.5 py-1 text-xs bg-slate-800 text-slate-300 rounded-md">Streamlit</span>
+            <span class="px-2.5 py-1 text-xs bg-slate-800 text-slate-300 rounded-md">Python</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Focus Areas -->
+    <section class="space-y-6">
+      <h2 class="text-2xl font-bold tracking-tight border-b border-slate-800 pb-3 flex items-center gap-2">
+        <i data-lucide="compass" class="w-6 h-6 text-indigo-400"></i> Focus Areas & Activities
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        
+        <div class="p-5 bg-slate-900/40 border border-slate-800/60 rounded-xl space-y-2">
+          <h3 class="font-semibold text-slate-200">Physical AI & Robotics</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            実世界環境下での自律制御や知能ロボットシステムの開発・コンペティションへの挑戦。
+          </p>
+        </div>
+
+        <div class="p-5 bg-slate-900/40 border border-slate-800/60 rounded-xl space-y-2">
+          <h3 class="font-semibold text-slate-200">Agent Architecture</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            LangGraphを用いたステートフルで自律的なマルチエージェント構造の設計・実装。
+          </p>
+        </div>
+
+        <div class="p-5 bg-slate-900/40 border border-slate-800/60 rounded-xl space-y-2">
+          <h3 class="font-semibold text-slate-200">Data Science & ML</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            データ分析から深層学習モデルの検証、実験管理（MLOps）を通じた実装。
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pt-10 border-t border-slate-800/80 text-center text-xs text-slate-500">
+      <p>© 2026 Ishino Mikihisa. Built with Tailwind CSS & GitHub Pages.</p>
+    </footer>
+
+  </div>
+
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+  </script>
+</body>
+</html>
